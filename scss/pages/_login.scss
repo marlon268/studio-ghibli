@@ -1,0 +1,150 @@
+button {
+  cursor: pointer;
+}
+
+.login {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #006AB3;
+
+  .login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 90%;
+  }
+
+  .login-sesion {
+    display:flex;
+    flex-direction: column;
+    height: 400px;
+
+
+    .login-sesion-terminos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:center;
+      width: 300px;
+      height: 100px;
+    }
+
+    .login-sesion-create{
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 200px;
+
+      button{
+      color:white;
+      background-color: #252836;
+      border: none;
+      border-radius: 20px;
+      height: 25px;
+      width: 70px;
+      transition: 0.5s;
+
+      &:active {
+        transform: scale(0.9);
+      }
+      }
+    }
+    .login-sesion-input {
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: space-between;
+      height: 150px;
+
+      div{
+        display:flex;
+        flex-direction: column;
+
+        label {
+          font-size: 1.3rem;
+        }
+
+        div {
+          display: flex;
+          padding-left: 15px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items:center;
+          border-radius: 20px;
+          background-color: #252836;
+          width: 275px;
+          height: 30px;
+          
+          input {
+          color: white;
+          font-size: 1rem;
+          margin-left: 10px;
+          border:none;
+          outline: none;
+          height: 100%;
+          background-color: transparent;
+          width: 230px;
+          }
+        }
+        
+      }
+    }
+    .login-sesion-button {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      height: 100px;
+
+      button{
+        color:white;
+        background-color: #252836;
+        border-radius: 20px;
+        border:none;
+        width: 100px;
+        height: 30px;
+        transition: 0.5s;
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+    .login-sesion-social {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100px;
+      div {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #252836;
+        border-radius: 20px;
+        height: 30px;
+        width: 250px;
+        transition: 0.5s;
+        &:active {
+          transform: scale(0.9);
+        }
+
+        button{
+        color:white;
+        background-color:transparent;
+        border:none;
+      }
+      
+      }
+    }
+  }
+}

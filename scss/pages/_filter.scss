@@ -1,0 +1,54 @@
+@use '../components/UI/moleculas/FilterSearch';
+@use '../components/UI/moleculas/HeaderStyle';
+
+.FilterSearch_Container {
+    width: 100%;
+    height: 100vh;
+    background-color: #006AB3;
+    color: #FFFFFF;
+    background-image: url('../../public/images/FiltersBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .select {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        select {
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            padding: 0 20px 0 20px;
+            option{
+                background-color: #006AB3;
+                border-radius: 20px;
+                font-size: 16px;
+            }
+        }
+
+        label {
+            display: block;
+            position: relative;
+            right: 125px;
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+    }   
+
+}
+
+.boton {
+    width: 100px;
+    height: 40px;
+    background: rgba(37, 40, 54, 0.8);
+    border-radius: 20px;
+    color: #F2F4F7;
+    text-align: center;
+    font-size: 16px;
+}

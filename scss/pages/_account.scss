@@ -1,0 +1,108 @@
+@import '../components/UI/moleculas/progressBar';
+
+
+.UserName_Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .UserName__button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffc107;
+        }
+    }
+}
+
+.Account_Container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../public/images/AccountBG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .UserNameData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        h1 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 34px;
+            color: #FFFFFF
+        }
+    }
+
+    .UserNameOptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 90px 0;
+
+        button {
+            background-color: transparent;
+            display: flex;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 150px;
+            height: 35px;
+            cursor: pointer;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid white;
+            margin-bottom: 10px;
+
+            .ArrowOne{
+                position: relative;
+                left: 50px;
+            }
+            
+            .ArrowTwo{
+                position: relative;
+                left: 5px;
+            }
+
+
+            &:hover {
+                color: #ffc107;
+            }
+
+            label {
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    .container-bar {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+        p {
+            margin-bottom: 5px;
+        }
+
+    }
+}
