@@ -3,7 +3,9 @@ import {AccountContainer} from '../components/UI/moleculas/AccountContainer/Acco
 
 const Account = () => {
   return (
+    <div className="animationAccount">
     <AccountContainer />
+    </div>
   )
 }
 

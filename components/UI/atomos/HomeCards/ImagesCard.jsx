@@ -4,7 +4,7 @@ export const ImagesCard = ( props ) =>{
     return(
         <img 
                 className="images-card"
-                src= { props.images }
+                src= { props.image }
                 alt="images of card"
             />
     )

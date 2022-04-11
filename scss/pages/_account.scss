@@ -1,4 +1,26 @@
 @import '../components/UI/moleculas/progressBar';
+.animationAccount {
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    background-color: $BackgroundColorUI;
+    animation: dot1 3.5s cubic-bezier(.55, .3, .24, .99) forwards;
+    @keyframes dot1 {
+
+    
+        3% {
+            opacity: 0;
+        }
+    
+        30%,
+        36% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 2;
+        }
+    }
+}
 
 
 .UserName_Header {

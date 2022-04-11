@@ -6,6 +6,7 @@ import {HeaderProfile} from '../components/UI/organismos/HeaderProfile/HeaderPro
 const Home = () => {
   return (
     <React.Fragment>
+      <div className="animationHome">
     <HeaderProfile />
     <div>
       <div>Home</div>
@@ -14,6 +15,7 @@ const Home = () => {
       <ProgressBar 
         bar = "20"
       />
+    </div>
     </div>
     </React.Fragment>
   )
