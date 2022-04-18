@@ -3,10 +3,10 @@ import ContainerText from "../../moleculas/HomeCards/ContainerText";
 import ContainerImg from "../../moleculas/HomeCards/ContainerImg";
 
 
-export const Cards = ({data}) => {
+export const Cards = ({children}) => {
     return(
         <div className="container">
-            <ContainerImg images={data.image}/>
+            <ContainerImg />
             <ContainerText />
         </div>      
                  

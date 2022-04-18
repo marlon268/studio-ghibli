@@ -3,7 +3,10 @@ import {HeaderNav} from '../components/UI/organismos/HeaderNav/HeaderNav'
 
 const FilmWatched = () => {
   return (
-    <HeaderNav />
+    <div className="animation">
+        <HeaderNav />
+    </div>
+   
   )
 }
 

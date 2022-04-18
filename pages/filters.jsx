@@ -5,10 +5,10 @@ import { HeaderNav } from '../components/UI/organismos/HeaderNav/HeaderNav'
 
 const Filters = () => {
   return (
-    <React.Fragment >
+    <div className="animation">
       <HeaderNav />
       <FilterContainer />
-    </React.Fragment>
+    </div>
   )
 }
 
