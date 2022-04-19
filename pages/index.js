@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import {InputBase} from '../components/UI/moleculas/InputBase'
+import { Estrellas } from "../components/UI/organismos/Estrellas";
 
 
 const Login = () => {
@@ -20,6 +21,8 @@ const Login = () => {
         <img src="./icons/logo.png" alt="logo login" />
       </div>
 
+      <Estrellas/>
+
       {isRegister ? (
         <>
           <div className="login-title">
@@ -28,8 +31,8 @@ const Login = () => {
           <div className="login-sesion">
             <div className="login-sesion-input">
               <InputBase img="./icons/PersonUser.png" tipo="text" label="UserName" />
-              <InputBase img={EmailIcon} tipo="text" label="Email" />
-              <InputBase img={LockIcon} tipo="password" label="Password" />
+              <InputBase img="./icons/Email.png"tipo="text" label="Email" />
+              <InputBase img="./icons/PasswordIcon.png" tipo="password" label="Password" />
             </div>
             <div className="login-sesion-create">
               <button onClick={login}>Return</button>
