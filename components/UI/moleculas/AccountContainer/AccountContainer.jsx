@@ -9,7 +9,6 @@ export const AccountContainer = () => {
   return (
     <div className="Account_Container">
         <UserNameHeader />
-        <ConfigMenu />
         <UserNameData />
         <UserNameOptions />
         <ProgressBar bar = "17" />

@@ -1,3 +1,13 @@
+.SubMenu_Account__ExitModal{
+    position: relative;
+    top: 5px;
+    left: 100px;
+    border-radius: 30px;
+    background: transparent;
+    border: none;
+}
+   
+
 .SubMenu_Account {
     width: 250px;
     height: 160px;
@@ -11,7 +21,27 @@
     z-index: 2;
     position: absolute;
     top: 0px;
-    left: 140px;
+    left: 125px;
+    z-index: 2;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    animation: dot3 3.5s cubic-bezier(.55, .3, .24, .99) forwards;
+    @keyframes dot3 {
+
+    
+        3% {
+            opacity: 0;
+        }
+    
+        30%,
+        36% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 2;
+        }
+    }
 
     .SubMenu_Account__list {
         width: 100%;

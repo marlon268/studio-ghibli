@@ -2,10 +2,15 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 
-export const ConfigMenu = () => {
+export const ConfigMenu = ({state, modalState}) => {
     const router = useRouter()
   return (
-    <nav className="SubMenu_Account">
+      <React.Fragment>
+          { state &&
+              <nav className="SubMenu_Account">
+                  <button className="SubMenu_Account__ExitModal" onClick={()=> modalState(!state)}>
+                        <img src='./images/X.png' alt="Exit" />
+                  </button>
         <ul className="SubMenu_Account__list">
             <li className="SubMenu_Account__item">
                 <button className="SubMenu_Account__button" onClick={()=> router.push('/about')}>
@@ -26,6 +31,8 @@ export const ConfigMenu = () => {
                 </button>
             </li>
         </ul>
-    </nav>
+    </nav>}
+    
+    </React.Fragment>
   )
 }
