@@ -1,34 +1,51 @@
-import React from 'react'
+import React, { useState, useEffect }from 'react'
 import {HeaderProfile} from '../components/UI/organismos/HeaderProfile/HeaderProfile'
 import { useRouter } from 'next/router'
-import data from '../database/data.js'
+/* import data from '../database/data.js' */
+import {getList} from '../database/services'
+
+
 
  
 const Home = () => {
+  const router = useRouter();
+  const [list, setList] = useState([]);
 
-  const router = useRouter()
+  useEffect(() => {
+    let mounted = true
+    getList()
+      .then(films => {
+        console.log('films:', films)
+        if (mounted) {
+       setList(films)
+       }
+      })
+    return () => {
+      mounted = false
+    }
+  }, [])
   
   return (
       <div className="animation">      
       <div className="cards">
       <HeaderProfile />
         {
-            data.map(({id, title, image, release_date, description}) => (
+            list.map(film => (
              
-              <div className="container" key={id}>
+              <div className="container" key={film.id}>
               <div className="container-images">
               <img 
                         className="images-card"
-                        src={image}
+                        src={film.image}
                         alt="images of card"
                     />
                </div>
                <div className="container-text">
-                    <h1 className="title-card"> {title} </h1>
-                    <p className="year-card"> {release_date}</p>
-                    <p className="description-card">{description }</p>
+                    <h1 className="title-card"> {film.title} </h1>
+                    <p className="year-card"> {film.release_date}</p>
+                    <p className="description-card">{film.description }</p>
               </div>
-              <button onClick={()=> router.push(`/films/${id}`)}>
+              <button onClick={()=> router.push(`/films/${film.id}`)}>
                 <a>Go!</a>
               </button>
               </div>
