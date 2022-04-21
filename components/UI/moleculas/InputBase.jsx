@@ -5,7 +5,7 @@ export const InputBase = ({ img, tipo, label }) => {
     <div>
       <label>{label}</label>
       <div>
-        <img src={img} alt="logo user" />
+        <img className="login-icon" src={img} alt="logo user" />
         <input type={tipo} />
       </div>
     </div>

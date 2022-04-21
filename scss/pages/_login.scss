@@ -1,4 +1,4 @@
-@import '../components/UI/moleculas/estrellas';
+@import "../components/UI/moleculas/estrellas";
 
 button {
   cursor: pointer;
@@ -12,7 +12,7 @@ button {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #006AB3;
+  background-color: #006ab3;
 
   .login-logo {
     display: flex;
@@ -23,52 +23,57 @@ button {
     width: 90%;
   }
 
-  .login-sesion {
-    display:flex;
+  .login-sesion,
+  .login-register {
+    display: flex;
     flex-direction: column;
     height: 400px;
+    animation: opacity 1s;
 
-
-    .login-sesion-terminos{
+    .login-sesion-terminos {
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items:center;
+      align-items: center;
       width: 300px;
       height: 100px;
     }
 
-    .login-sesion-create{
-      
+    .login-sesion-create {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 200px;
 
-      button{
-      color:white;
-      background-color: #252836;
-      border: none;
-      border-radius: 20px;
-      height: 25px;
-      width: 70px;
-      transition: 0.5s;
+      button {
+        font-size: 1rem;
+        color: white;
+        background-color: #252836;
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        width: 100px;
+        transition: 0.5s;
 
-      &:active {
-        transform: scale(0.9);
-      }
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
     .login-sesion-input {
-      display:flex;
+      display: flex;
       flex-direction: column;
-      align-items:center;
+      align-items: center;
       justify-content: space-between;
       height: 150px;
 
-      div{
-        display:flex;
+      .login-icon {
+        height: 15px;
+      }
+
+      div {
+        display: flex;
         flex-direction: column;
 
         label {
@@ -80,38 +85,38 @@ button {
           padding-left: 15px;
           flex-direction: row;
           justify-content: space-between;
-          align-items:center;
+          align-items: center;
           border-radius: 20px;
           background-color: #252836;
           width: 275px;
           height: 30px;
-          
+
           input {
-          color: white;
-          font-size: 1rem;
-          margin-left: 10px;
-          border:none;
-          outline: none;
-          height: 100%;
-          background-color: transparent;
-          width: 230px;
+            color: white;
+            font-size: 1rem;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            height: 100%;
+            background-color: transparent;
+            width: 230px;
           }
         }
-        
       }
     }
     .login-sesion-button {
-      display:flex;
+      display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       height: 100px;
 
-      button{
-        color:white;
+      button {
+        font-size: 1rem;
+        color: white;
         background-color: #252836;
         border-radius: 20px;
-        border:none;
+        border: none;
         width: 100px;
         height: 30px;
         transition: 0.5s;
@@ -121,13 +126,13 @@ button {
       }
     }
     .login-sesion-social {
-      display:flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
       height: 100px;
       div {
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
@@ -140,12 +145,13 @@ button {
           transform: scale(0.9);
         }
 
-        button{
-        color:white;
-        background-color:transparent;
-        border:none;
-      }
-      
+        button {
+          text-align: start;
+          width: 150px;
+          color: white;
+          background-color: transparent;
+          border: none;
+        }
       }
     }
   }
