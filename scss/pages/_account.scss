@@ -2,7 +2,7 @@
 .animation {
     transition: all 1.5s ease;
     transform-style: preserve-3d;
-    background-color: $BackgroundColorUI;
+    background-color: transparent;
     animation: dot1 3.5s cubic-bezier(.55, .3, .24, .99) forwards;
     @keyframes dot1 {
 

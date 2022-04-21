@@ -2,18 +2,22 @@ import React from "react";
 import TitleCard from '../../atomos/HomeCards/TitleCard'
 import YearCard from "../../atomos/HomeCards/YearCard"
 import DescriptionCard from "../../atomos/HomeCards/DescriptionCard"
+import {useRouter} from 'next/router'
 
-const ContainerText = () =>{
+const ContainerText = (props) =>{
+    const router = useRouter();
     return(
         <div className="container-text">
-                <TitleCard
-                    title = "Star Wars: The Rise of Skywalker"
+            <a onClick={()=> router.push(`/films/${props.id}`)}>
+            <TitleCard
+                    title={props.title}
                 />
+            </a>              
                 <YearCard 
-                    year = "1986"
+                    year={props.year}
                 />
                 <DescriptionCard 
-                    description = "The surviving Resistance faces the First Order once again, and unite once again to defeat the evil Galactic Empire."
+                    description={props.description}
                 
                 />
                

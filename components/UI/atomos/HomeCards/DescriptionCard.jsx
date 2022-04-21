@@ -1,8 +1,8 @@
 import React from "react";
 
-const DescriptionCard = ( props) =>{
+const DescriptionCard = (props) =>{
     return(
-        <p className="description-card">{ props.description }</p>
+        <p className="description-card">{props.description}</p>
     )
 }
 

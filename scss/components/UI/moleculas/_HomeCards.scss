@@ -1,20 +1,85 @@
-.container{
-    margin: 40px 37px 40px 36px;
-    padding: 0;
-    width: 302px;
-    height: 163px;
-    background:#8D8D8D99;
-    border-radius: 20px;
-    display: flex;   
-    
+.containerCards {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    background-image: url('../../../../public/images/HomeBG.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .card {
+        display: flex;
+        width: 302px;
+        height: 163px;
+        background: rgba(141, 141, 141, 0.6);
+        border-radius: 20px;
+        margin: 40px 37px 40px 36px;
+        padding: 0;
+
+        .container-images {
+            min-height: 163px;
+            min-width: 134px;
+
+            .images-card {
+                margin: 0 auto;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fafafa;
+                border-radius: 20px 0px 0px 20px;
+
+            }
+        }
+
+        .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+
+            .title-card {
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 21px;
+                margin: 0 15px 15px 15px;
+                text-align: center;
+            }
+
+            .year-card {
+                font-family: 'Roboto';
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                padding: 0 0 10px 10px;
+                margin: 0;
+                position: relative;
+                left: -65px;
+            }
+
+            .description-card {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+
+                color: #FFFFFF;
+                height: 63px;
+                width: 143px;
+                overflow: hidden;
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
