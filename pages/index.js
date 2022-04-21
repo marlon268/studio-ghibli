@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 import {InputBase} from '../components/UI/moleculas/InputBase'
@@ -5,6 +6,7 @@ import { Estrellas } from "../components/UI/organismos/Estrellas";
 
 
 const Login = () => {
+  const router = useRouter()
   const [isRegister, setIsRegister] = useState(false);
 
   const register = () => {
@@ -26,9 +28,9 @@ const Login = () => {
       {isRegister ? (
         <>
           <div className="login-title">
-            <h1>User Account</h1>
+            <h1>Register</h1>
           </div>
-          <div className="login-sesion">
+          <div className="login-register">
             <div className="login-sesion-input">
               <InputBase img="./icons/PersonUser.png" tipo="text" label="UserName" />
               <InputBase img="./icons/Email.png"tipo="text" label="Email" />
@@ -56,7 +58,7 @@ const Login = () => {
             </div>
             <div className="login-sesion-button">
               <button onClick={register}>Register</button>
-              <button>Log-in</button>
+              <button onClick={()=> router.push("/home")} >Log-in</button>
             </div>
             <div className="login-sesion-social">
               <div>
