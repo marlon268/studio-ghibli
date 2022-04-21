@@ -1,0 +1,132 @@
+
+.container-film-id{ 
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    filter: brightness(0.6);
+    object-fit: cover;
+}
+
+.container-title{
+    width: 100%;
+    display: flex;    
+    padding-top: 23px;
+    padding-bottom: 31px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    div{
+        width: 100%;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title{
+        padding-right: 10px;   
+        font-weight: 500;
+        font-size: 25px; 
+        justify-content: space-around;
+                
+        
+
+    }
+    
+}
+.container-images{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+    .img{
+        width: 160px;
+        height: 160px;
+        border-radius: 20px;
+        align-content: center;
+        border: 1px solid #ddd;        
+    }
+    .iconStar{
+        padding-top: 10px;
+    } 
+}
+
+.container-text-film-id{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 37px 0px 0px 0px;
+    margin: 0;    
+    
+    .description{
+        font-size: 15px;
+        height: 100%;
+        display: inline;
+        padding-bottom: 16px;
+        width: 215px;
+        line-height: 18px;
+        text-align: justify;
+        position: relative; 
+    }
+    p{
+        padding-top: 6px;
+        position: relative;
+        
+    }
+    .moreInfo{
+        border-bottom: 1px solid #FFFFFF;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .moreinfo a{
+        text-decoration: none;
+        
+    }
+ 
+}
+
+.year-card-film{
+    font-size: 15px;
+    margin-left: 8px;    
+}
+
+.year-card-film:before{
+    content:"( "
+}
+.year-card-film:after{
+    content:" )"
+}
+
+@media screen and (min-width: 600px){
+    .container-text-film-id{
+        
+        .description{
+            width: 400px;
+        }
+    }
+    .container-images{
+        .img{
+            height: 200px;
+            width: 200px;
+        }}
+
+    
+
+}
+    
