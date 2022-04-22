@@ -1,5 +1,5 @@
 import React from "react";
-import { MovieWatched } from "../MovieWatched/movieWatched";
+import { MovieWatched } from "../MovieWatched/MovieWatched";
 
 export const YearCard = ( props ) =>{
     return(
