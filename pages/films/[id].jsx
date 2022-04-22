@@ -1,7 +1,6 @@
-import React from 'react'
-import {useRouter} from 'next/router'
-import data from '../../database/data'
-import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav'
+import React from 'react';
+import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav';
+import { Estrellas } from "../../components/UI/organismos/Estrellas";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faStar, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
@@ -24,11 +23,7 @@ export default function Film ({data}){
             <div className='container-images'>
                 <img className='img' src={data.image}  /> 
                 <div className='iconStar'>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
+                  <Estrellas/>
                 </div>
                 
             </div>
