@@ -4,7 +4,7 @@ export const MovieWatched = () => {
   return (
     <React.Fragment>
         <input className="heart" type="checkbox" id="heart" />
-        <label for="heart">❤</label>
+        <label htmlFor="heart">❤</label>
     </React.Fragment>
     
   )

@@ -53,8 +53,9 @@
                 font-size: 18px;
                 color: #FFFFFF;
                 line-height: 21px;
-                margin: 0 15px 15px 15px;
+                margin: 0 15px 5px 15px;
                 text-align: center;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
             }
 
             .year-card {
@@ -66,6 +67,7 @@
                 line-height: 14px;
                 padding: 0 0 10px 10px;
                 margin: 0;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
             }
 
             .description-card {
@@ -79,6 +81,7 @@
                 height: 63px;
                 width: 143px;
                 overflow: hidden;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
             }
         }
     }
