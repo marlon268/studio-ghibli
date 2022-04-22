@@ -1,0 +1,58 @@
+.buttonLogin{   
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 39px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+    button{
+        border-radius: 20px;
+        width: 302px;
+        height: 39px;
+        background-color: #006AB3;
+        color: #FFFFFF;
+        border: 2px #FFFFFF solid;
+    }
+
+    button:hover{
+        background-color: #252836;
+        color: #FFFFFF;
+        border: 2px #252836 solid;
+    }
+
+    button p{
+        width: 86%;
+        height: 100%;
+        text-align: left;
+        
+        align-items: center;
+        float: right;
+          
+    }
+    .facebook, .twitter{
+        height: 100%;  
+        border: 2px #FFFFFF solid;
+        color: #FFFFFF;
+        background-color: #006AB3;
+        padding-top: 10px;
+        display: inline;
+        
+        
+    }
+    
+    .facebook:hover, .twitter:hover{
+        background-color: #252836;
+        color: #FFFFFF;
+        border: 2px #252836 solid;
+        
+    }
+    
+
+    
+}
+
+
