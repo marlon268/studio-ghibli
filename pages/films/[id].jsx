@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav';
 import { Estrellas } from "../../components/UI/organismos/Estrellas";
+import Link from 'next/link'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
@@ -29,9 +30,15 @@ export default function Film ({data}){
             </div>
             <div className='container-text-film-id'>
                 <p className='description'>{ data.description }</p>
-                <p className='moreInfo'><a href= "https://ghibli.fandom.com/wiki/Ghibli_Wiki" >More info </a><FontAwesomeIcon icon={faArrowRight}/></p>
-            </div>     
+                <p className='moreInfo'>
+                  <Link href={`https://es.wikipedia.org/wiki/${data.title}`} passHref>
+                    <a>More info </a>
+                  </Link>
+                  <FontAwesomeIcon icon={faArrowRight}/></p>
+            </div>
+                 
     </div>
+    
     </>
   )
 }
