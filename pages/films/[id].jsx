@@ -3,7 +3,7 @@ import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav';
 import { Estrellas } from "../../components/UI/organismos/Estrellas";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faStar, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
+import {faHeart, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
 
 export default function Film ({data}){
     
