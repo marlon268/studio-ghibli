@@ -3,6 +3,7 @@ import TitleCard from '../../atomos/HomeCards/TitleCard'
 import YearCard from "../../atomos/HomeCards/YearCard"
 import DescriptionCard from "../../atomos/HomeCards/DescriptionCard"
 import {useRouter} from 'next/router'
+import { Estrellas } from "../../organismos/Estrellas";
 
 const ContainerText = (props) =>{
     const router = useRouter();
@@ -20,7 +21,7 @@ const ContainerText = (props) =>{
                     description={props.description}
                 
                 />
-               
+                <Estrellas/>               
         </div>
     )
 }

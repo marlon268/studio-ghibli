@@ -1,0 +1,53 @@
+.boxFuncionality {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+[id="heart"] {
+    display: none;
+}
+
+[for="heart"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 25px;
+    align-self: center;
+    transition: color 0.2s ease-in-out;
+    position: relative;
+    top: -10px;
+    margin-right: 10px;
+}
+
+[for="heart"]:hover {
+    color: grey;
+}
+
+[for="heart"]::selection {
+    color: none;
+    background: transparent;
+}
+
+[for="heart"]::moz-selection {
+    color: none;
+    background: transparent;
+}
+
+[id="heart"]:checked+label {
+    color: $BackgroundColorUI;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+
+
+@keyframes heart {
+
+    0%,
+    17.5% {
+        font-size: 0;
+    }
+}
