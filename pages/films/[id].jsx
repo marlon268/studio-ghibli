@@ -1,10 +1,10 @@
-import React from 'react'
-import {useRouter} from 'next/router'
-import data from '../../database/data'
-import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav'
+import React from 'react';
+import { HeaderNav } from '../../components/UI/organismos/HeaderNav/HeaderNav';
+import { Estrellas } from "../../components/UI/organismos/Estrellas";
+import Link from 'next/link'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faStar, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
+import {faHeart, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
 
 export default function Film ({data}){
     
@@ -24,19 +24,21 @@ export default function Film ({data}){
             <div className='container-images'>
                 <img className='img' src={data.image}  /> 
                 <div className='iconStar'>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
-                <FontAwesomeIcon icon={faStar}/>
+                  <Estrellas/>
                 </div>
                 
             </div>
             <div className='container-text-film-id'>
                 <p className='description'>{ data.description }</p>
-                <p className='moreInfo'><a href= "https://ghibli.fandom.com/wiki/Ghibli_Wiki" >More info </a><FontAwesomeIcon icon={faArrowRight}/></p>
-            </div>     
+                <p className='moreInfo'>
+                  <Link href={`https://es.wikipedia.org/wiki/${data.title}`} passHref>
+                    <a>More info </a>
+                  </Link>
+                  <FontAwesomeIcon icon={faArrowRight}/></p>
+            </div>
+                 
     </div>
+    
     </>
   )
 }

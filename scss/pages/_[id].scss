@@ -90,16 +90,22 @@
         
     }
     .moreInfo{
-        border-bottom: 1px solid #FFFFFF;
+        
         text-decoration: none;
         color: #FFFFFF;
+        display: inline;
+        width: 215px;
+        text-align: right;
     }
-    .moreinfo a{
+    a{
         text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #FFFFFF; 
+        
         
     }
  
-}
+} 
 
 .year-card-film{
     font-size: 15px;
