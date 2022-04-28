@@ -16,6 +16,8 @@ const ContainerText = (props) =>{
             </a>              
                 <YearCard 
                     year={props.year}
+                    id={props.id}
+                    watched={props.watched}
                 />
                 <DescriptionCard 
                     description={props.description}

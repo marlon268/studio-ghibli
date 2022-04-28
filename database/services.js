@@ -8,6 +8,3 @@ export async function getList (){
         console.log(error);
         console.log("Error en la conexión");
     }
-    
-
-}

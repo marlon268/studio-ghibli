@@ -12,6 +12,7 @@
         "release_date": "1986",
         "running_time": "124",
         "rt_score": "95",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/598f7048-74ff-41e0-92ef-87dc1ad980a9",
             "https://ghibliapi.herokuapp.com/people/fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
@@ -45,6 +46,7 @@
         "release_date": "1988",
         "running_time": "89",
         "rt_score": "97",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -72,6 +74,7 @@
         "release_date": "1988",
         "running_time": "86",
         "rt_score": "93",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
             "https://ghibliapi.herokuapp.com/people/d5df3c04-f355-4038-833c-83bd3502b6b9",
@@ -110,6 +113,7 @@
         "release_date": "1989",
         "running_time": "102",
         "rt_score": "96",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/2409052a-9029-4e8d-bfaf-70fd82c8e48d",
             "https://ghibliapi.herokuapp.com/people/7151abc6-1a9e-4e6a-9711-ddb50ea572ec",
@@ -143,6 +147,7 @@
         "release_date": "1991",
         "running_time": "118",
         "rt_score": "100",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -170,6 +175,7 @@
         "release_date": "1992",
         "running_time": "93",
         "rt_score": "94",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -197,6 +203,7 @@
         "release_date": "1994",
         "running_time": "119",
         "rt_score": "78",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -224,6 +231,7 @@
         "release_date": "1995",
         "running_time": "111",
         "rt_score": "91",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -251,6 +259,7 @@
         "release_date": "1997",
         "running_time": "134",
         "rt_score": "92",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0",
             "https://ghibliapi.herokuapp.com/people/ebe40383-aad2-4208-90ab-698f00c581ab",
@@ -289,6 +298,7 @@
         "release_date": "1999",
         "running_time": "104",
         "rt_score": "75",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -316,6 +326,7 @@
         "release_date": "2001",
         "running_time": "124",
         "rt_score": "97",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/8228751c-bdc1-4b8d-a6eb-ca0eb909568f"
         ],
@@ -343,6 +354,7 @@
         "release_date": "2002",
         "running_time": "75",
         "rt_score": "89",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -370,6 +382,7 @@
         "release_date": "2004",
         "running_time": "119",
         "rt_score": "87",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -397,6 +410,7 @@
         "release_date": "2006",
         "running_time": "116",
         "rt_score": "41",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -424,6 +438,7 @@
         "release_date": "2008",
         "running_time": "100",
         "rt_score": "92",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -451,6 +466,7 @@
         "release_date": "2010",
         "running_time": "94",
         "rt_score": "95",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -478,6 +494,7 @@
         "release_date": "2011",
         "running_time": "91",
         "rt_score": "83",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -505,6 +522,7 @@
         "release_date": "2013",
         "running_time": "126",
         "rt_score": "89",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -532,6 +550,7 @@
         "release_date": "2013",
         "running_time": "137",
         "rt_score": "100",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -559,6 +578,7 @@
         "release_date": "2014",
         "running_time": "103",
         "rt_score": "92",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -586,6 +606,7 @@
         "release_date": "2016",
         "running_time": "80",
         "rt_score": "93",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],
@@ -613,6 +634,7 @@
         "release_date": "2021",
         "running_time": "82",
         "rt_score": "30",
+        "watched": false,
         "people": [
             "https://ghibliapi.herokuapp.com/people/"
         ],

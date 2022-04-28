@@ -1,0 +1,409 @@
+//---------------------
+//  Resize the characters here: 
+$sizeStarter:100px;
+//---------------------
+
+.StarterContainer {
+  margin:0;
+  
+div, div:after, div:before {
+    position:absolute;
+    content:"";
+  }
+  
+  .wrap {
+    width:100%;
+    height:100%;  
+    background: linear-gradient(270deg, #006ab3, #ffffff, #b7b9a4, #6a7f83);
+    background-size: 800% 800%;
+    z-index: 5;
+    -webkit-animation: AnimationStarter 8s ease infinite;
+    -moz-animation: AnimationStarter 8s ease infinite;
+    animation: AnimationStarter 8s ease infinite;
+    animation: loader 3.5s linear forwards;
+    
+@keyframes loader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;
+    }
+
+    95% {
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        overflow: visible;
+    }
+}
+
+
+
+@-webkit-keyframes AnimationStarter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationStarter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationStarter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+  }
+  
+  .boh-yubird {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height:$sizeStarter*1.3;
+    width:$sizeStarter;
+    margin:auto;
+    animation: floatanim ease-in-out 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes floatanim{
+    0% {transform:  translate(0px,$sizeStarter*-0.45);}
+    50% {transform:  translate(0px,$sizeStarter*-0.6);}
+    100% {transform:  translate(0px,$sizeStarter*-0.45);}
+  }
+  
+  
+  .upper-body {
+    width:$sizeStarter;
+    height:$sizeStarter*1.3;
+    background:#f3d9cd;
+    border-radius: 50% 50% 50% 50%/65% 65% 35% 35%;
+    box-shadow:inset $sizeStarter*-0.15 $sizeStarter*-0.1 #d7b5aa;
+    background:radial-gradient(circle at top, #f3d9cd, #e7cabf);
+  }
+  
+  .lower-body {
+    width:$sizeStarter*0.5;
+    height:$sizeStarter*0.9;
+    background:#f3d9cd;
+    border-radius: 50%;
+    top:$sizeStarter*0.75;
+    left:$sizeStarter*0.03;
+    box-shadow: $sizeStarter*0.45 0 0 0 #d7b5aa, 
+                inset $sizeStarter*-0.15 0 #d7b5aa;
+  }
+  .lower-body:after {
+    background:#fbe9da;
+    width:$sizeStarter*0.8;
+    height:$sizeStarter*0.8;
+    border-radius: 50%;
+    top:$sizeStarter*0;
+    left:$sizeStarter*0.075;
+    box-shadow: inset $sizeStarter*-0.3 $sizeStarter*-0.05 #e9d2c0;
+  }
+  
+  .head {
+    border:$sizeStarter*0.02 solid #e7cabf;
+    background:#f3d9cd;
+    width:$sizeStarter*0.55;
+    height:$sizeStarter*0.55;
+    border-radius: 45% 45% 0 0;
+    top:$sizeStarter*0.6;
+    left:$sizeStarter*0.22;
+    box-shadow:inset $sizeStarter*-0.1 $sizeStarter*-0.1 #dec0b7;
+  }
+  .head:before {
+    background:#f3d9cd;
+    width:$sizeStarter*0.4;
+    height:$sizeStarter*0.4;
+    border-radius: 50%;
+    top:$sizeStarter*0.38;
+    left:$sizeStarter*0.23;
+    box-shadow: $sizeStarter*-0.31 0 0 0 #f3d9cd, 
+                inset $sizeStarter*-0.1 $sizeStarter*-0.05 #dec0b7;
+  }
+  
+  .eyes {
+    background:#fff8f3;
+    width:$sizeStarter*0.15;
+    height:$sizeStarter*0.15;
+    border-radius: 50%;
+    top:$sizeStarter*0.25;
+    left:$sizeStarter*0.05;
+    box-shadow:$sizeStarter*0.3 0 0 0 #fff8f3;
+  }
+  .eyes:before {
+    background:#26130e;
+    width:$sizeStarter*0.07;
+    height: $sizeStarter*0.07;
+    border-radius: 50%;
+    top: $sizeStarter*0.03;
+    left: $sizeStarter*0.06;
+    box-shadow:$sizeStarter*0.26 0 0 0 #26130e;
+  }
+  
+  .nose {
+    background:#f5aba0;
+    width:$sizeStarter*0.06;
+    height: $sizeStarter*0.06;
+    border-radius: 20% 20% 50% 50%;
+    top: $sizeStarter*0.35;
+    left: $sizeStarter*0.24;
+  }
+  
+  .ears {
+    background:#f3d9cd;
+    width:$sizeStarter*0.2;
+    height: $sizeStarter*0.25;
+    border-radius: 50%/70% 70% 30% 30%;
+    top: $sizeStarter*-0.15;
+    left: 0;
+    box-shadow: $sizeStarter*0.35 0 0 0 #f3d9cd;
+  }
+  .ears:after {
+    background:#efbbba;
+    width:$sizeStarter*0.15;
+    height: $sizeStarter*0.24;
+    border-radius: 50%/70% 70% 30% 30%;
+    top: 0;
+    left: $sizeStarter*0.4;
+    box-shadow: $sizeStarter*-0.4 0 0 0 #efbbba,
+                inset $sizeStarter*0.05 $sizeStarter*-0.05 #deafac;  
+  }
+  
+  .feet {
+    background:#e89d97;
+    width:$sizeStarter*0.03;
+    height:$sizeStarter*0.3;
+    top:$sizeStarter*1.5;
+    left:$sizeStarter*0.27;
+    border-radius:$sizeStarter*0.05;
+    box-shadow:$sizeStarter*0.45 0 0 0 #e89d97;
+  }
+  
+  .feet:after{
+    background:#e89d97;
+    width:$sizeStarter*0.03;
+    height:$sizeStarter*0.3;
+    top:$sizeStarter*-0.03;
+    left:$sizeStarter*-0.03;
+    border-radius:$sizeStarter*-0.03;
+    box-shadow:$sizeStarter*0.45 $sizeStarter*-0.04 0 0 #e89d97;
+    transform:rotate(6deg);
+  }
+  .feet:before{
+    background:#e89d97;
+    width:$sizeStarter*0.03;
+    height:$sizeStarter*0.3;
+    top:$sizeStarter*-0.03;
+    left:$sizeStarter*0.03;
+    border-radius:$sizeStarter*-0.03;
+    box-shadow:$sizeStarter*0.45 $sizeStarter*0.05 0 0 #e89d97;
+    transform:rotate(-6deg);
+  }
+  
+  .tail {
+    width:$sizeStarter*0.3;
+    height:$sizeStarter*0.8;
+    top:$sizeStarter*1.45;
+    left:$sizeStarter*0.45;
+    border-radius:0 0 0 100%;
+    border-left:$sizeStarter*0.1 solid #d88589;
+  }
+  
+  
+  //-----------------
+  //  Yubaba's Bird
+  //-----------------
+  .body {
+    background:#322730;
+    width:$sizeStarter*0.3;
+    height:$sizeStarter*0.3;
+    border-radius:50%/0% 0% 100% 100%;
+    top:$sizeStarter*-0.6;
+    left:$sizeStarter*0.35;
+  }
+  .body:before {
+    width:$sizeStarter*0.3;
+    height:$sizeStarter*0.3;
+    background:#7c5c5c;
+    border-radius:50%;
+    top:$sizeStarter*-0.3;
+  }
+  .body:after {
+    background:#322730;
+    width:$sizeStarter*0.1;
+    height:$sizeStarter*0.1;
+    border-radius:50%;
+    top:$sizeStarter*0.15;
+    left:$sizeStarter*0.01;
+    box-shadow:$sizeStarter*0.18 0 0 0 #322730;
+  }
+  
+  .beak {
+    background:#fbdd8f;
+    width:$sizeStarter*0.5;
+    height:$sizeStarter*0.15;
+    border-radius:50%/100% 100% 0 0;
+    top:$sizeStarter*-0.7;
+    left:$sizeStarter*0.25;
+    box-shadow: inset $sizeStarter*-0.1 0 #e8b96a;
+  }
+  .beak:after {
+    background:#e8b96a;
+    width:$sizeStarter*0.35;
+    height:$sizeStarter*0.07;
+    border-radius:50%/0 0 100% 100%;
+    top:$sizeStarter*0.15;
+    left:$sizeStarter*0.08;
+  }
+  
+  .yu-eyes {
+    width:$sizeStarter*0.25;
+    height:$sizeStarter*0.25;
+    border-radius:50%;
+    background:#fff8f3;
+    top:$sizeStarter*-0.86;
+    left:$sizeStarter*0.25;
+    box-shadow:$sizeStarter*0.25 0 0 0 #fff8f3;
+  }
+  .yu-eyes:after {
+    width:$sizeStarter*0.08;
+    height:$sizeStarter*0.08;
+    border-radius:50%;
+    background:#322730;
+    top:$sizeStarter*0.08;
+    left:$sizeStarter*0.08;
+    box-shadow:$sizeStarter*0.25 0 0 0 #322730;
+  }
+  
+  .left-leg {
+    width:$sizeStarter*0.3;
+    height:$sizeStarter*0.3;
+    border-left:$sizeStarter*0.02 solid #322730;
+    border-bottom:$sizeStarter*0.02 solid #322730;
+    transform:rotate(45deg) skewy(20deg);
+    top:$sizeStarter*-0.35;
+    left:$sizeStarter*0.23;
+  }
+  .left-leg:after {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.05;
+    border-left:$sizeStarter*0.02 solid #322730;
+    border-top:$sizeStarter*0.02 solid #322730;
+    transform:rotate(45deg) skewx(50deg);
+    top:$sizeStarter*0.34;
+    left:$sizeStarter*0.28;
+  }
+  
+  .right-leg {
+    width:$sizeStarter*0.3;
+    height:$sizeStarter*0.3;
+    border-right:$sizeStarter*0.02 solid #322730;
+    border-top:$sizeStarter*0.02 solid #322730;
+    transform:rotate(45deg) skewx(20deg);
+    top:$sizeStarter*-0.35;
+    left:$sizeStarter*0.45;
+  }
+  .right-leg:after {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.05;
+    border-left:$sizeStarter*0.02 solid #322730;
+    border-top:$sizeStarter*0.02 solid #322730;
+    transform:rotate(-45deg) skewy(50deg);
+    top:$sizeStarter*0.28;
+    left:$sizeStarter*0.34;
+  }
+  
+  .hair-1 {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.2;
+    border-left:$sizeStarter*0.01 solid #322730;
+    top:$sizeStarter*-1.15;
+    left:$sizeStarter*0.49;
+  }
+  .hair-1:after {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.2;
+    border-left:$sizeStarter*0.01 solid #322730;
+    transform:rotate(10deg);
+    top:$sizeStarter*0.02;
+    left:$sizeStarter*0.07;
+  }
+  .hair-1:before {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.2;
+    border-left:$sizeStarter*0.01 solid #322730;
+    transform:rotate(-10deg);
+    top:$sizeStarter*0.01;
+    left:$sizeStarter*-0.09;
+  }
+  
+  .hair-2 {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.2;
+    border-left:$sizeStarter*0.01 solid #322730;
+    transform:rotate(-30deg);
+    top:$sizeStarter*-1.11;
+    left:$sizeStarter*0.32;
+  }
+  .hair-2:after {
+    width:$sizeStarter*0.05;
+    height:$sizeStarter*0.2;
+    border-left:$sizeStarter*0.01 solid #322730;
+    transform:rotate(60deg);
+    top:$sizeStarter*0.19;
+    left:$sizeStarter*0.28;
+  }
+  
+  .left-wing {
+    width:$sizeStarter*0.4;
+    height:$sizeStarter*0.1;
+    border-radius:50%;
+    background: #322730;
+    top:$sizeStarter*-0.6;
+    left:$sizeStarter*-0.25;
+    animation: leftwinganim linear 0.15s;
+    animation-iteration-count: infinite;
+    transform-origin: 100% 50%;
+  }
+  @keyframes leftwinganim{
+    0% {transform:  translate(0px,$sizeStarter*0.15)  rotate(-60deg);}
+    50% {transform:  translate($sizeStarter*0.05,$sizeStarter*-0.15)  rotate(60deg);}
+    100% {transform:  translate(0px,$sizeStarter*0.15)  rotate(-60deg);}
+  }
+  
+  .right-wing {
+    width:$sizeStarter*0.4;
+    height:$sizeStarter*0.1;
+    border-radius:50%;
+    background: #322730;
+    top:$sizeStarter*-0.6;
+    left:$sizeStarter*0.8;
+    animation: rightwinganim linear 0.15s;
+    animation-iteration-count: infinite;
+    transform-origin: 0% 100%;
+  }
+  @keyframes rightwinganim{
+    0% {transform:  translate(0px,$sizeStarter*0.15)  rotate(60deg);}
+    50% {transform:  translate($sizeStarter*0.05,$sizeStarter*-0.15)  rotate(-60deg);}
+    100% {transform:  translate(0px,$sizeStarter*0.15)  rotate(60deg);}
+  }
+  
+  .ccc, .ccc a {
+    bottom:0px;
+    right:0px;
+    font-family:Tahoma;
+    font-size:10pt;
+    padding:5px;
+    background:#eb5252;
+    border-radius:5px 0 0 0;
+    color:white;
+  }
+}

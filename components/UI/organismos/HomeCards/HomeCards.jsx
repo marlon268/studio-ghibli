@@ -9,7 +9,7 @@ export const Cards = (props) => {
     return(
         <div className="card">
              <ContainerImg image={props.image}  />
-            <ContainerText id={props.id} title={props.title} year={props.release_date}  description={props.description}  />
+            <ContainerText id={props.id} title={props.title} year={props.release_date}  description={props.description} watched={props.watched}  />
         </div>       
     )
 }
