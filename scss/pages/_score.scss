@@ -1,34 +1,48 @@
 .containerScore{
     background-color: black;
     width: 100%;
-    display: flex;
+    //display: block;
+    position: absolute;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;    
-    display: block;
+    align-items: center;   
     padding-top: 20px;
     
 }
-
+.container-main{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    
+}
 .container{
     width: 300px;
     height: 150px;
     display: flex;    
     align-items: center;    
     background-color: rgba(141, 141, 141, 0.4);
-    border-radius: 20px;
-    display: block;
+    border-radius: 20px;    
     margin-bottom: 20px;
-    justify-content: space-between;
+    
+   
     
 }
-
-
 .container-text{
-    
-    padding-top: 15px;
-
+    width: 100%;
 }
+
+.container-estrellas{
+    font-size: 10px;
+    color: white;
+    margin-top: 15px;
+    display: block;
+
+    h2{
+        text-align: center;
+    }
+}
+
 .images-score{
     width: 150px;
     height: 150px;
@@ -37,7 +51,30 @@
 
 .title-score{
     
-    height: 100%;
-    font-size: 10px;
+    margin-top: 10px;
+    font-size: 15px;
 }
+
+@media screen and (min-width: 600px){
+    
+    .container{
+        margin: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 0;
+        
+    }
+    .container-main{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-gap: 30px;
+        padding: 30px 80px 30px 80px;
+        justify-content: center;
+        align-content: center;
+       
+    }
+    
+
+}
+ 
 

@@ -44,22 +44,29 @@ const Score = () => {
         </header>
 
       <div className="containerScore">
-        
-            {list.map(({id, title, image}) => (
-              <div className="container" key = {id}>                
-                <img 
-                        className="images-score"
-                        src= { image }
-                        alt="images of card"
-                      />
-              
-                      <div className="container-text">
-                        <h1 className="title-score"> { title } </h1> 
-                        <Estrellas/>
-                        <ModalContainer />
-                      </div>                       
-              </div>    
-            ))}
+        <div className="container-main">
+          {list.map(({id, title, image}) => (
+                <div className="container" key = {id}>                
+                  <img 
+                          className="images-score"
+                          src= { image }
+                          alt="images of card"
+                        />
+                
+                        <div className="container-text">
+                          <h1 className="title-score"> { title } </h1>
+                          <div className="container-estrellas">
+                            <h2>Audience Score</h2>
+                            <Estrellas/>
+                            <h2>Your Score</h2>
+                            <Estrellas/>
+                            <ModalContainer />
+                          </div> 
+                          
+                        </div>                       
+                </div>    
+              ))}
+        </div>  
       </div>
     
     </>
