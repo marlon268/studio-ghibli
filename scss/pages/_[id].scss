@@ -12,7 +12,7 @@
     height: 100%;
     position: absolute;
     
-    filter: brightness(0.6);
+    filter: brightness(0.4);
     object-fit: cover;
 }
 
@@ -106,6 +106,10 @@
     }
  
 } 
+
+.iconStar{
+    width: 100%;
+}
 
 .year-card-film{
     font-size: 15px;

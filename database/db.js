@@ -1,4 +1,4 @@
-import allData from './data'
+//import allData from './data'
 
 class Database {
   constructor() {}

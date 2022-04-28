@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import  ButtonLogin from "../components/UI/moleculas/ButtonLogin/ButtonLogin";
 import {InputBase} from '../components/UI/moleculas/InputBase'
-import { Estrellas } from "../components/UI/organismos/Estrellas";
+
 
 
 const Login = () => {
@@ -23,7 +23,7 @@ const Login = () => {
         <img src="./icons/logo.png" alt="logo login" />
       </div>
 
-      <Estrellas/>
+      
 
       {isRegister ? (
         <>
@@ -49,9 +49,7 @@ const Login = () => {
       ) : (
         <>
           
-          <div className="login-title">
-            <h1>Log-in</h1>
-          </div>
+         
           <div className="login-sesion">
             <div className="login-sesion-input">
               <InputBase img="./icons/UserIcon.png" tipo="text" label="User" />
