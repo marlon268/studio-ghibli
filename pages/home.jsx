@@ -76,7 +76,7 @@ const Home = () => {
         </div>       
      ) : (
           searchedTitles.map((film) => (
-          <HomeCards
+          <HomeCards key={film.id}
             id={film.id}
             title={film.title}
             image={film.image}
