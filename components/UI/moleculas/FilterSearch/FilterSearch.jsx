@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-
-
 export const FilterSearch = () => {
   return (
     <React.Fragment>

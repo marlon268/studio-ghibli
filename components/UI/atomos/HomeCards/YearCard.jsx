@@ -5,7 +5,7 @@ export const YearCard = ( props ) =>{
     return(
         <div className="boxFuncionality">
              <p className="year-card"> { props.year }</p>
-            <MovieWatched />
+            <MovieWatched watched={props.watched} />
         </div>
        
 

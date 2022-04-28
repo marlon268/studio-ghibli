@@ -1,9 +1,9 @@
-import React from 'react'
+import React , { useState, useEffect } from 'react'
 import { NavBar } from '../../moleculas/NavBar/NavBar'
 import  Link  from 'next/link'
 
 
-export const HeaderProfile = () => {
+export const HeaderProfile = (props) => {
   return (
     <header>
       <button className="UserNameOptions__button">
@@ -12,7 +12,7 @@ export const HeaderProfile = () => {
       </Link>
       </button>  
   <nav>
-    <NavBar />
+    <NavBar searchValue={props.searchValue} setSearchValue={props.setSearchValue} />
   </nav>
 </header>
   )

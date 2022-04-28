@@ -28,10 +28,19 @@ input[type="radio"] {
 }
 
 .label-form:hover,
-.label-form:hover ~ label {
+.label-form:hover~label {
   color: white;
 }
 
-input[type="radio"]:checked ~ .label-form {
+input[type="radio"]:checked~.label-form {
   color: white;
+}
+
+@media screen and (max-width: 374px) {
+  #form {
+    left: 0px;
+    top: -10px;
+    height: 40px;
+    position: relative;
+  }
 }
