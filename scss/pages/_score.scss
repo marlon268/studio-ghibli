@@ -1,0 +1,43 @@
+.containerScore{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+    display: block;
+    padding-top: 20px;
+    
+}
+
+.container{
+    width: 300px;
+    height: 150px;
+    display: flex;    
+    align-items: center;    
+    background-color: rgba(141, 141, 141, 0.4);
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    
+}
+
+
+.container-text{
+    
+    padding-top: 15px;
+
+}
+.images-score{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.title-score{
+    
+    height: 100%;
+    font-size: 10px;
+}
+

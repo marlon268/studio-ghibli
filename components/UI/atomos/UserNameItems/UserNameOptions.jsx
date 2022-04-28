@@ -1,12 +1,17 @@
 import React from 'react'
+import Link from 'next/link' 
 
 
 export const UserNameOptions = () => {
   return (
     <div className="UserNameOptions">
         <button className="UserNameOptions__button">
-            <label>Scores</label>
+          <Link href="/score">
+          <label>Scores</label>
+          </Link>
             <img className="ArrowOne" src='./images/ArrowOptions.png' alt="Arrow" />
+          
+            
         </button>
         <button className="UserNameOptions__button">
             <label>Passwords</label>

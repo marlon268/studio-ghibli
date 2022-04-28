@@ -1,6 +1,6 @@
 export function getList (){
     return (
-        fetch('https://ghibliapi.herokuapp.com/films')
+        fetch(' https://demo5947973.mockable.io/movies')
             .then(data => data.json())
     ) 
 }
