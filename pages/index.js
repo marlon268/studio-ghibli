@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-
+import  ButtonLogin from "../components/UI/moleculas/ButtonLogin/ButtonLogin";
 import {InputBase} from '../components/UI/moleculas/InputBase'
 import { Estrellas } from "../components/UI/organismos/Estrellas";
 
@@ -48,6 +48,7 @@ const Login = () => {
         </>
       ) : (
         <>
+          
           <div className="login-title">
             <h1>Log-in</h1>
           </div>
@@ -59,18 +60,22 @@ const Login = () => {
             <div className="login-sesion-button">
               <button onClick={register}>Register</button>
               <button onClick={()=> router.push("/home")} >Log-in</button>
-            </div>
-            <div className="login-sesion-social">
-              <div>
-                <img src="./icons/IconTwitter.png" alt="logo twitter" />
-                <button>Connect with Twitter</button>
+            </div>          
+              <div className='buttonLogin'>
+                    <ButtonLogin  
+                      className = "facebook"
+                      type = "button"
+                      text = "Connect with Facebook"                 
+                   />
               </div>
-              <div>
-                <img src="./icons/IconFacebook.png" alt="logo facebook" />
-                <button>Connect with Facebook</button>
+              <div className='buttonLogin'>
+                    <ButtonLogin  
+                      className = "twitter"
+                      type = "button"
+                      text = "Connect with Twitter"
+                    />
               </div>
             </div>
-          </div>
         </>
       )}
     </main>

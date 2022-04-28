@@ -1,4 +1,7 @@
 import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass  } from "@fortawesome/free-solid-svg-icons";
+
 
 
 export const NavBar = ({searchValue, setSearchValue}) => {
@@ -10,7 +13,7 @@ export const NavBar = ({searchValue, setSearchValue}) => {
    <div className="SearchBar">
   <input type="text" placeholder="Search" onChange={onSearchValueChange}  value={searchValue} />
   <button type="submit" className="btn">
-    <img src="./images/SearchInput.png" alt="ShearchIcon" />
+    <FontAwesomeIcon icon={ faMagnifyingGlass } width="15px" color='white'/>
   </button>
 </div>
   )
