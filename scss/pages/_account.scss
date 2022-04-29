@@ -5,8 +5,6 @@
     transform-style: preserve-3d;
     background-color: #006ab3;
     animation: dot1 3.5s cubic-bezier(.55, .3, .24, .99) forwards;
-    min-width: 100vh;
-    min-height: 100vh;
 
     @keyframes dot1 {
 

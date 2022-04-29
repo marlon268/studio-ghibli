@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-image: url('../../../../public/images/HomeBG.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,8 +11,6 @@
     background-attachment: fixed;
     min-height: 100vh;
     min-width: 100vw;
-    height: 100%;
-    width: 100%;
     
 
     .card {
