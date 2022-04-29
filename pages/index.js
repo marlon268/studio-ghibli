@@ -57,7 +57,7 @@ const Login = () => {
             </div>
             <div className="login-sesion-button">
               <button onClick={register}>Register</button>
-              <button onClick={()=> router.push("/home")} >Log-in</button>
+              <button onClick={()=> router.push("/starter")} >Log-in</button>
             </div>          
               <div className='buttonLogin'>
                     <ButtonLogin  
