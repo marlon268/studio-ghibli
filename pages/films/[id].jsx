@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 import { Estrellas } from "../../components/UI/organismos/Estrellas";
 import Link from 'next/link'
-import { getList } from '../../database/services';
+import { getList } from '../../database/services'
+import { HeaderDetails } from '../../components/UI/organismos/HeaderDetails/HeaderDetails';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faArrowRight  } from "@fortawesome/free-solid-svg-icons";
@@ -15,21 +17,7 @@ export default function Film ({data}){
   return (
       <>
         
-        <header>
-            <button className="UserNameOptions__button">
-              <Link href="/home">
-                <FontAwesomeIcon icon={faArrowLeft} width="25px" color='white'/>
-              </Link>
-            </button> 
-            <nav>
-            <div className="SearchBar">
-              <input type="text" placeholder="Search" />
-              <button className="btn">
-              <FontAwesomeIcon icon={ faMagnifyingGlass } width="15px" color='white'/>
-              </button>
-            </div>
-            </nav>
-        </header>
+        <HeaderDetails />
         <div className='container-film-id'>        
             <img className='background-img' src={data.movie_banner} />
             <div className='container-title'>
