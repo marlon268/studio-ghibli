@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
-import { Starter } from '../components/UI/organismos/AnimationBanners/Starter'
+import { StarterAnimation } from '../components/UI/organismos/AnimationBanners/StarterAnimation'
 
-const starter = () => {
+const Starter = () => {
     
   const [starter, setStarter] = useState(true);
   const router = useRouter();
+    
+  const goHome = () => {
+    router.push('/home');
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -13,18 +17,16 @@ const starter = () => {
         }, 2500);
     }, []);
 
-    const goHome = () => {
-        router.push('/home');
-    }
+   
 
 
   return (
     <React.Fragment>
       {
-        starter ? (<Starter />) : (goHome())
+        starter ? (<StarterAnimation />) : (goHome())
       }
     </React.Fragment>
   )
 }
 
-export default starter
+export default Starter

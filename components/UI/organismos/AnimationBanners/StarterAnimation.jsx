@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Starter = () => {
+export const StarterAnimation = () => {
   return (
       <div className="StarterContainer">
     <div className="wrap">
