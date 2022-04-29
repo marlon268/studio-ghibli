@@ -4,7 +4,6 @@ import { getList } from "../database/services";
 import HomeCards from "../components/UI/organismos/HomeCards/HomeCards";
 import {FilterContainer} from '../components/UI/organismos/FilterContainer/FilterContainer'
 import { Kodama } from "../components/UI/organismos/AnimationBanners/Kodama";
-import { Starter } from "../components/UI/organismos/AnimationBanners/Starter";
 
 const Home = () => {
   const [list, setList] = React.useState([]);
@@ -28,21 +27,6 @@ const Home = () => {
     setFilterState(filterState => !filterState);    
   }
 
-  const [starter, setStarter] = useState(false);
-  const [noRepeat , setNoRepeat] = useState(true);
-
-  useEffect(() => {
-   if (noRepeat) {
-    setTimeout(() => {
-      setStarter(!starter);
-      setTimeout(() => {
-        setNoRepeat(false);
-        noRepeat => !noRepeat;
-      }, 0);
-    }, 3500);
-   } 
-  }, []);
-
   const [searchValue, setSearchValue] = React.useState('')
 
   let searchedTitles = []
@@ -57,16 +41,12 @@ const Home = () => {
   }
   
   return (
-    <React.Fragment>
-      { ((!starter)&&(noRepeat)) ? (
-        <Starter />
-      ) : (
-        <div className="animation">
+      <div className="animation">
+      <HeaderProfile searchValue={searchValue} setSearchValue={setSearchValue}/>
       <div className="containerCards">
       <button className="IconFilter" onClick={()=> handleClickFilters()}>
     <img  src="./images/filterIcon.png" alt="backButton" />
     </button>
-    <HeaderProfile searchValue={searchValue} setSearchValue={setSearchValue}/>
     <React.Fragment>
     { 
       filterState ? (
@@ -86,14 +66,11 @@ const Home = () => {
           />
         ))  
          )
-         
     }
     </React.Fragment>
     </div>
-    </div>
-    )}
-    </React.Fragment>
-  )
+    </div>   
+  );
 };
 
 export default Home;
