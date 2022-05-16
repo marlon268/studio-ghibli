@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react'
+import HomeCards from '../../organismos/HomeCards/HomeCards'
 
-export const Kodama = () => {
+export const Kodama = (props) => {
     function toggleText(element, texts, delay) {
         let i = 0;
         
@@ -29,9 +30,8 @@ export const Kodama = () => {
       } , [])
       
 
-  return (
-      
-    <div className="KodamaContainer">
+  return (  
+      <div className="KodamaContainer">
         <div className="wrapper">
      <div className="kodama">
         <div className="body">
@@ -43,6 +43,6 @@ export const Kodama = () => {
     </div>
     <h1 className="dialog js-dialog">— ...</h1>
         </div>
-    </div>
+    </div>    
   )
 }
