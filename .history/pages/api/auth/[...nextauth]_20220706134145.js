@@ -1,0 +1,19 @@
+import NextAuth from "next-auth"
+import GithubProvider from "next-auth/providers/github"
+import Facebook from "next-auth/providers/facebook"
+import Twitter from "next-auth/providers/twitter"
+
+export default NextAuth({
+  // Configure one or more authentication providers
+  providers: [
+    Facebook({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
+    Twitter({
+       clientId: process.env.TWITTER_ID,
+       clientSecret: process.env.TWITTER_SECRET,
+    })
+    // ...add more providers here
+  ],
+})

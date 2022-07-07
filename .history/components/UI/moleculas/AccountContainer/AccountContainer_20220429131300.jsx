@@ -4,7 +4,6 @@ import { UserNameData } from '../../atomos/UserNameItems/UserNameData'
 import { UserNameOptions } from '../../atomos/UserNameItems/UserNameOptions'
 import ProgressBar from '../../atomos/ProgessBar/ProgressBar'
 import { ConfigMenu } from '../../organismos/SubMenuAccount/ConfigMenu'
-import {signOut, useSession} from "next-auth/react"
 
 export const AccountContainer = () => {
   return (
