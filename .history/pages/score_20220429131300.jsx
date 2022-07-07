@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Link from 'next/link'
-import { getSession } from "next-auth/react";
 
 import { HeaderProfile } from "../components/UI/organismos/HeaderProfile/HeaderProfile";
 import { getList } from "../database/services";
@@ -73,26 +72,6 @@ const Score = () => {
     </>
   );
 };
-
-export const getServerSideProps = async (context) => {
-  const session = await getSession(context)
-
-  if (!session) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    }
-  }
-
-  return {
-    props: {
-      session,
-    },
-  }
-
-}
 
 export default Score;
 

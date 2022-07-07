@@ -1,10 +1,12 @@
 import React from 'react'
-import { HeaderNav} from '../components/UI/organismos/HeaderNav/HeaderNav'
-import { getSession } from 'next-auth/react'
+import {HeaderNav} from '../components/UI/organismos/HeaderNav/HeaderNav'
 
-const Search = () => {
+const FilmWatched = () => {
   return (
-    <HeaderNav />
+    <div className="animation">
+        <HeaderNav />
+    </div>
+   
   )
 }
 
@@ -28,4 +30,4 @@ export const getServerSideProps = async (context) => {
 
 }
 
-export default Search
+export default FilmWatched

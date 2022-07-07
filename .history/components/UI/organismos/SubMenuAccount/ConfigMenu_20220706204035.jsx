@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import {signOut, useSession} from "next-auth/react"
+import {signOut} from "next-auth/react"
 
 
 export const ConfigMenu = ({state, modalState}) => {
