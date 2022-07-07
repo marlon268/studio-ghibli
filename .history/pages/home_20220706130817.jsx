@@ -4,7 +4,7 @@ import { getList } from "../database/services";
 import HomeCards from "../components/UI/organismos/HomeCards/HomeCards";
 import {FilterContainer} from '../components/UI/organismos/FilterContainer/FilterContainer'
 import { Kodama } from "../components/UI/organismos/AnimationBanners/Kodama";
-import { getSession } from "next-auth/react"
+import { useSession, signIn, signOut } from "next-auth/react"
 
 const Home = () => {
   const [list, setList] = React.useState([]);
@@ -149,8 +149,8 @@ const Home = () => {
 };
 
 
-export const getServerSideProps = async (context) => {
-  const session = await getSession()
+export function getServerSideProps(context) {
+  const session = await useSession()
 
   if (!session) {
     return {

@@ -62,7 +62,7 @@ const Login = () => {
             </div>          
               <div className='buttonLogin'>
                     <ButtonLogin  
-                      onClick={()=> signIn('facebook')}
+                      onClick={signIn('facebook')}
                       className = "facebook"
                       type = "button"
                       text = "Connect with Facebook"                 
@@ -70,7 +70,7 @@ const Login = () => {
               </div>
               <div className='buttonLogin'>
                     <ButtonLogin  
-                      onClick={() => signIn('twitter')}
+                      onClick={signIn('twitter')}
                       className = "twitter"
                       type = "button"
                       text = "Connect with Twitter"
@@ -78,7 +78,7 @@ const Login = () => {
               </div>
               <div className='buttonLogin'>
                     <ButtonLogin  
-                      onClick={() => signIn('github')}
+                      onClick={signIn('github')}
                       className = "github"
                       type = "button"
                       text = "Connect with Github"

@@ -2,7 +2,8 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import  ButtonLogin from "../components/UI/moleculas/ButtonLogin/ButtonLogin";
 import {InputBase} from '../components/UI/moleculas/InputBase'
-import {signIn, useSession} from "next-auth/react"
+
+
 
 const Login = () => {
   const router = useRouter()
@@ -16,18 +17,14 @@ const Login = () => {
     setIsRegister(false);
   };
 
-  
-  const {data: session, status} = useSession();
-
-  if(status !== 'loading' && status === 'authenticated') {
-    router.push('/home')
-  }
-
   return (
     <main className="login">
       <div className="login-logo">
         <img src="./icons/logo.png" alt="logo login" />
-      </div>   
+      </div>
+
+      
+
       {isRegister ? (
         <>
           <div className="login-title">
@@ -50,7 +47,9 @@ const Login = () => {
           </div>
         </>
       ) : (
-        <>         
+        <>
+          
+         
           <div className="login-sesion">
             <div className="login-sesion-input">
               <InputBase img="./icons/UserIcon.png" tipo="text" label="User" />
@@ -62,7 +61,6 @@ const Login = () => {
             </div>          
               <div className='buttonLogin'>
                     <ButtonLogin  
-                      onClick={()=> signIn('facebook')}
                       className = "facebook"
                       type = "button"
                       text = "Connect with Facebook"                 
@@ -70,18 +68,9 @@ const Login = () => {
               </div>
               <div className='buttonLogin'>
                     <ButtonLogin  
-                      onClick={() => signIn('twitter')}
                       className = "twitter"
                       type = "button"
                       text = "Connect with Twitter"
-                    />
-              </div>
-              <div className='buttonLogin'>
-                    <ButtonLogin  
-                      onClick={() => signIn('github')}
-                      className = "github"
-                      type = "button"
-                      text = "Connect with Github"
                     />
               </div>
             </div>
@@ -91,5 +80,24 @@ const Login = () => {
   );
 };
 
+export function getServerSideProps(context) {
+  const session = await unstable_getServerSession(context.req, context.res, authOptions)
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    }
+  }
+
+  return {
+    props: {
+      session,
+    },
+  }
+
+}
 
 export default Login;

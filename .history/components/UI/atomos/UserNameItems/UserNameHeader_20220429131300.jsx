@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react'
 import Link from 'next/link'
 import { ConfigMenu } from '../../organismos/SubMenuAccount/ConfigMenu';
 
-export const UserNameHeader = (props) => {
+export const UserNameHeader = () => {
   const [modalState, setModalState] = useState(false);
 
 

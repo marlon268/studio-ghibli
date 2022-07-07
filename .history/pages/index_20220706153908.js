@@ -79,6 +79,7 @@ const Login = () => {
               <div className='buttonLogin'>
                     <ButtonLogin  
                       onClick={() => signIn('github')}
+                      icon={"fa fa-github"}
                       className = "github"
                       type = "button"
                       text = "Connect with Github"

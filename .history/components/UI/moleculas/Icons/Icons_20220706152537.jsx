@@ -24,9 +24,7 @@ const github = icon({ prefix: 'fab', iconName: 'github'});
         <FontAwesomeIcon icon={twitter}  />      
     )    
   } else if(props.icon === "github"){
-    return(
-      <FontAwesomeIcon icon={github} />  
-   )         
+      <FontAwesomeIcon icon={github} />   
   }
   else{
     return(      

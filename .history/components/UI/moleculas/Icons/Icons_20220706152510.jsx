@@ -3,10 +3,10 @@ import React from 'react'
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {fas} from '@fortawesome/free-solid-svg-icons'
-import {faTwitter, faFacebook, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faTwitter, faFacebook, fagithub} from '@fortawesome/free-brands-svg-icons'
 
 
-library.add(fas , faTwitter, faFacebook, faGithub);
+library.add(fas , faTwitter, faFacebook, fagithub);
 
 const Icons = (props) =>{
 
@@ -24,9 +24,7 @@ const github = icon({ prefix: 'fab', iconName: 'github'});
         <FontAwesomeIcon icon={twitter}  />      
     )    
   } else if(props.icon === "github"){
-    return(
-      <FontAwesomeIcon icon={github} />  
-   )         
+      <FontAwesomeIcon icon={github} />   
   }
   else{
     return(      
