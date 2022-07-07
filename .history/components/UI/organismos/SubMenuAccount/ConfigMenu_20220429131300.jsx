@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import {signOut, useSession} from "next-auth/react"
 
 
 export const ConfigMenu = ({state, modalState}) => {
@@ -26,7 +25,7 @@ export const ConfigMenu = ({state, modalState}) => {
                 </button>
             </li>
             <li className="SubMenu_Account__item">
-                <button className="SubMenu_Account__button" onClick={()=> signOut()}>
+                <button className="SubMenu_Account__button" onClick={()=> router.push('/')}>
                     <a>Log Out</a>
                     <img src='./images/LogOut.png' alt="LogOut" />
                 </button>

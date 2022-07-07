@@ -1,10 +1,11 @@
 import React from 'react'
-import { HeaderNav} from '../components/UI/organismos/HeaderNav/HeaderNav'
-import { getSession } from 'next-auth/react'
+import {AccountContainer} from '../components/UI/moleculas/AccountContainer/AccountContainer'
 
-const Search = () => {
+const Account = () => {
   return (
-    <HeaderNav />
+    <div className="animation">
+    <AccountContainer />
+    </div>
   )
 }
 
@@ -28,4 +29,4 @@ export const getServerSideProps = async (context) => {
 
 }
 
-export default Search
+export default Account
