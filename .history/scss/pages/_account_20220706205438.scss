@@ -60,15 +60,7 @@
         align-items: center;
         align-content: center;
 
-        img{
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-            object-fit: cover;
-        }
-
         h1 {
-            margin-top: 60px;
             font-family: 'Ubuntu';
             font-style: normal;
             font-weight: 400;
@@ -136,11 +128,5 @@
             margin-bottom: 5px;
         }
 
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .Account_Container{
-        background-image: url('../../public/images/accountBg1024px.jpg');
     }
 }

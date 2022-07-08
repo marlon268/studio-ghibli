@@ -8,21 +8,13 @@ import {useSession} from "next-auth/react"
 
 export const AccountContainer = () => {
   const {data:session, status} = useSession();
-  const [user, getUser] = React.useState([]);
 
-  React.useEffect(()=> {
-    
-      getUser(session.user);
-   
-
-  },[]);
-
-  console.log("user", user)
+  console.log("data", session)
 
   return (
     <div className="Account_Container">
         <UserNameHeader />
-        <UserNameData name={user.name} image={user.image} />
+        <UserNameData />
         <UserNameOptions />
         <ProgressBar bar = "17" />
     </div>
