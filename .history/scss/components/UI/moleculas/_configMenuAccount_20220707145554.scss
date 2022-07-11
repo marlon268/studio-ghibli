@@ -1,5 +1,5 @@
 .SubMenu_Account__ExitModal{
-    position: relative;
+    position: absolute;
     top: 5px;
     left: 100px;
     border-radius: 30px;
@@ -20,8 +20,8 @@
     justify-content: space-around;
     z-index: 2;
     position: absolute;
-    top: 10px;
-    left: calc(100% - 260px);
+    top: 0px;
+    left: 125px;
     z-index: 2;
     transition: all 1.5s ease;
     transform-style: preserve-3d;
