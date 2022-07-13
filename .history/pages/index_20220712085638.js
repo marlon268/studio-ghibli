@@ -62,6 +62,14 @@ const Login = () => {
             </div>          
               <div className='buttonLogin'>
                     <ButtonLogin  
+                      onClick={()=> signIn('facebook')}
+                      className = "facebook"
+                      type = "button"
+                      text = "Connect with Facebook"                 
+                   />
+              </div>
+              <div className='buttonLogin'>
+                    <ButtonLogin  
                       onClick={() => signIn('twitter')}
                       className = "twitter"
                       type = "button"
